@@ -1,0 +1,10 @@
+f1_env/
+__pycache__/
+*.pyc
+.env
+data/
+*.csv
+.ipynb_checkpoints/
+cache/
+models/*.pkl
+.DS_Store
