@@ -1,24 +1,27 @@
-# Part 4 — Feature Engineering & Model Improvement
+# Part 4 — Feature Engineering & Model Improvement (2020–2024)
 
-Taking the Part 3 skeleton model and improving it
-significantly using better features and XGBoost.
+Improving the Part 3 model by adding domain knowledge
+about modern F1 — tyre strategy, track characteristics,
+driver form — and switching to XGBoost.
 
 ## What changed from Part 3
 
 | Thing | Part 3 | Part 4 |
 |-------|--------|--------|
 | Model | RandomForest | XGBoost |
-| Features | 5 basic features | 10+ engineered features |
+| Features | 5 basic | 12 engineered |
 | Tuning | None | GridSearchCV |
+| Data | 2020–2024 | 2020–2024 + enriched |
 
 ## New features added
 
 - Rolling driver form (avg finish last 5 races)
-- Rolling constructor form
+- Rolling constructor form (last 5 races)
+- Circuit type: street / power / technical / mixed
 - Tyre compound history per circuit
-- Circuit type encoding (street, power, technical)
-- Pit stop count from previous races
-- Weather flag (dry/wet)
+- Qualifying gap to pole (seconds)
+- Weather flag: dry / wet
+- Whether driver is defending champion
 
 ## Results
 
@@ -39,5 +42,6 @@ significantly using better features and XGBoost.
 ## How to run
 ```bash
 f1_env\Scripts\activate.bat
-# Open feature_engineering.ipynb and run each cell
+# Open feature_engineering.ipynb
+# Run each cell with Shift+Enter
 ```

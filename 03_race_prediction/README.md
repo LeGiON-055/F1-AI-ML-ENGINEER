@@ -1,27 +1,34 @@
-# Part 3 — ML Race Winner Prediction
+# Part 3 — ML Race Winner Prediction (2020–2024)
 
 A machine learning model trained to predict Formula 1
-race winners using historical race data.
+race winners using 2020–2024 race data.
 
 ## Problem
 
-Given pre-race information (grid position, championship
-standings, circuit), can we predict which driver will win?
+Given pre-race information available before lights out
+(grid position, championship standings, circuit),
+can we predict which driver will win?
+
+## Why 2020–2024 only?
+
+Using only the modern era means the model learns from
+current car regulations, tyre compounds and team
+performance — not 1970s data that's irrelevant today.
 
 ## Approach
 
-- Built a structured dataset from the Kaggle Ergast CSVs
-- Trained a RandomForestClassifier
-- Evaluated using accuracy, precision, recall and F1 score
+- Built structured dataset from Kaggle Ergast 2020–2024
+- Trained RandomForestClassifier as baseline model
+- Evaluated with accuracy, precision, recall, F1 score
 
 ## Results
 
 | Metric | Score |
 |--------|-------|
-| Accuracy | [fill in] |
-| Precision | [fill in] |
-| Recall | [fill in] |
-| F1 Score | [fill in] |
+| Accuracy | [fill in after running] |
+| Precision | [fill in after running] |
+| Recall | [fill in after running] |
+| F1 Score | [fill in after running] |
 
 ## Features used
 
@@ -35,7 +42,7 @@ standings, circuit), can we predict which driver will win?
 
 | File | Description |
 |------|-------------|
-| dataset_builder.py | Builds ML dataset from raw CSVs |
+| dataset_builder.py | Builds ML dataset from 2020–2024 CSVs |
 | model_training.ipynb | Trains, evaluates and saves model |
 | README.md | This file |
 

@@ -1,20 +1,22 @@
-# Part 1 — F1 Data Analysis
+# Part 1 — F1 Data Analysis (2020–2024)
 
-Exploratory data analysis on 70+ years of Formula 1 race
-history using Python, pandas, matplotlib and seaborn.
+Exploratory data analysis focused on the modern Formula 1
+era — the Verstappen/ground effect period from 2020 to 2024.
 
 ## What I explored
 
-- How the number of races per year has grown since 1950
-- Which drivers have the most wins of all time
-- Which constructors dominated each decade
-- Whether grid position (qualifying) actually predicts race finish
+- Constructor championship battle 2020–2024
+  (Mercedes → Red Bull dominance shift)
+- Driver win counts in the hybrid/ground effect era
+- Points progression across the 2023 and 2024 seasons
+- Grid position vs race finish in the modern era
+- Pit stop strategy trends 2020–2024
 
 ## Key findings
 
 > Fill in after running the notebook — e.g.
-> "Pole position converts to a win 40% of the time
-> in the turbo hybrid era (2014–2023)"
+> "Verstappen won 19 out of 22 races in 2023 —
+> the highest win rate in modern F1 history"
 
 ## Files
 
@@ -26,26 +28,22 @@ history using Python, pandas, matplotlib and seaborn.
 
 ## Output charts
 
-All charts are saved to the `outputs/` folder:
-- `races_per_year.png`
-- `top_drivers_wins.png`
-- `constructor_dominance.png`
-- `grid_vs_finish.png`
+All charts saved to `outputs/` folder:
+- `wins_2020_2024.png`
+- `constructor_points_2020_2024.png`
+- `points_progression_2023.png`
+- `grid_vs_finish_modern.png`
 
-## Dataset used
+## Dataset
 
-Files from the Kaggle Ergast dataset:
+Kaggle Ergast dataset filtered to 2020–2024:
 - `races.csv`
 - `drivers.csv`
 - `results.csv`
 - `constructors.csv`
+- `driver_standings.csv`
 
 ## How to run
-```bash
-# Make sure venv is active
-f1_env\Scripts\activate.bat
-
-# Open notebook in VS Code
-# Click on analysis.ipynb
-# Run each cell with Shift+Enter
-```
+```bashf1_env\Scripts\activate.bat
+Open analysis.ipynb in VS Code
+Run each cell with Shift+Enter

@@ -8,35 +8,36 @@
 
 ## What this project is about
 
-Can we use 70+ years of Formula 1 data to analyse driver
-performance, predict race winners with machine learning, and
-build an AI assistant that answers race analytics questions?
+The 2020s have been the most data-rich era in Formula 1 history.
+This project uses that data — live telemetry, race results,
+tyre strategy, and driver performance — to build an end-to-end
+AI/ML pipeline that analyses, predicts, and answers questions
+about modern F1 racing.
 
-This project explores that question end-to-end — from raw
-CSV data all the way to a working AI chatbot.
+**Data focus: 2020–2024 season (Verstappen era)**
 
 ## Project structureF1-AI-ML-Engineer/
 │
-├── 01_data_analysis/        ← EDA with pandas & matplotlib
-├── 02_fastf1_visualizations/ ← Live telemetry with FastF1
-├── 03_race_prediction/      ← ML model with RandomForest
-├── 04_model_improvement/    ← XGBoost + feature engineering
-├── 05_ai_race_engineer/     ← AI chatbot with LLM + RAG
+├── 01_data_analysis/         ← 2020–2024 EDA with pandas
+├── 02_fastf1_visualizations/ ← Live 2024 telemetry via FastF1
+├── 03_race_prediction/       ← ML model trained on 2020–2024
+├── 04_model_improvement/     ← XGBoost + feature engineering
+├── 05_ai_race_engineer/      ← AI chatbot with live FastF1 RAG
 │
-├── data/                    ← Kaggle CSVs (not in repo)
-├── outputs/                 ← Saved charts and plots
-├── models/                  ← Saved ML models
-└── src/                     ← Reusable utility scripts
+├── data/                     ← Kaggle CSVs (not in repo)
+├── outputs/                  ← Saved charts and plots
+├── models/                   ← Saved ML models
+└── src/                      ← Reusable utility scripts
 
 ## What I built
 
-| Part | Topic | Tech | Status |
-|------|-------|------|--------|
-| 01 | F1 data analysis | pandas, matplotlib, seaborn | 🔄 In Progress |
-| 02 | Telemetry visualisations | FastF1, matplotlib | ⏳ Coming soon |
-| 03 | ML race prediction | scikit-learn, RandomForest | ⏳ Coming soon |
-| 04 | Feature engineering | XGBoost, GridSearchCV | ⏳ Coming soon |
-| 05 | AI race engineer chatbot | LLM API, RAG, FastF1 | ⏳ Coming soon |
+| Part | Topic | Data Used | Tech | Status |
+|------|-------|-----------|------|--------|
+| 01 | 2020–2024 F1 analysis | Kaggle Ergast | pandas, matplotlib, seaborn | 🔄 In Progress |
+| 02 | 2024 live telemetry | FastF1 API | FastF1, matplotlib | ⏳ Coming soon |
+| 03 | Race winner prediction | 2020–2024 Kaggle | scikit-learn, RandomForest | ⏳ Coming soon |
+| 04 | Model improvement | 2020–2024 Kaggle | XGBoost, GridSearchCV | ⏳ Coming soon |
+| 05 | AI race engineer | Live FastF1 2024 | LLM API, RAG, FastF1 | ⏳ Coming soon |
 
 ## Results
 
@@ -54,9 +55,22 @@ pip install -r requirements.txt
 ## Dataset
 
 - [Ergast F1 World Championship Dataset — Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
-- FastF1 API — live telemetry data, auto-downloaded by scripts
+  — filtered to 2020–2024 for all analysis and ML
+- FastF1 API — live 2024 telemetry, auto-downloaded by scripts
 
 > Download the Kaggle dataset and place all CSV files inside the `data/` folder.
+
+## Why 2020–2024?
+
+This era covers:
+- Max Verstappen's 4 consecutive world championships
+- Mercedes dominance collapse and Red Bull rise
+- Ferrari resurgence under Leclerc and Sainz
+- New ground effect regulations from 2022
+- The most competitive midfield in F1 history
+
+This makes for the most interesting and relevant ML
+and data analysis in the sport's history.
 
 ## Tech stack
 
