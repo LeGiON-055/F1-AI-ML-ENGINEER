@@ -1,0 +1,37 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║        F1 DATA ANALYSIS - PART 1 COMPLETE                       ║
+║        Modern Era: 2020-2024  |  25 Mar 2026                    ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  DATASET OVERVIEW                                                ║
+║  Total races analysed      : 107                              ║
+║  Unique drivers            : 36                               ║
+║  Unique constructors       : 14                               ║
+║  Total race results        : 2139                             ║
+║                                                                  ║
+║  WINS & DOMINANCE                                                ║
+║  Most race wins (driver)   : Max Verstappen (55 wins)
+║  Most points (constructor) : Red Bull (2,948 pts)
+║  P1 grid -> P1 finish rate : 52.3%                             ║
+║                                                                  ║
+║  GRID vs FINISH                                                  ║
+║  Pearson correlation       : 0.6218                          ║
+║  Interpretation            : Strong positive correlation          ║
+║  ML implication            : Grid position is a key feature     ║
+║                                                                  ║
+║  PIT STOP STRATEGY                                               ║
+║  Overall avg stop time     : 24.86s                         ║
+║  Overall median stop time  : 23.67s                         ║
+║  Total pit stops recorded  : 3,550                          ║
+║                                                                  ║
+║  CHARTS SAVED                                                    ║
+║  driver_wins_2020_2024.png          - Done                      ║
+║  constructor_points_2020_2024.png   - Done                      ║
+║  points_progression_2023_2024.png   - Done                      ║
+║  grid_vs_finish_2020_2024.png       - Done                      ║
+║  pitstop_strategy_2020_2024.png     - Done                      ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  PART 1 COMPLETE - Ready for Part 2: FastF1 Telemetry           ║
+╚══════════════════════════════════════════════════════════════════╝
