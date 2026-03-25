@@ -1,49 +1,28 @@
-# Part 1 — F1 Data Analysis (2020–2024)
+# Part 1 — F1 Data Analysis (2020-2024)
 
-Exploratory data analysis focused on the modern Formula 1
-era — the Verstappen/ground effect period from 2020 to 2024.
+Exploratory data analysis of the modern F1 era using the Kaggle F1 dataset.
 
-## What I explored
+## Status: Complete ✅
 
-- Constructor championship battle 2020–2024
-  (Mercedes → Red Bull dominance shift)
-- Driver win counts in the hybrid/ground effect era
-- Points progression across the 2023 and 2024 seasons
-- Grid position vs race finish in the modern era
-- Pit stop strategy trends 2020–2024
+## Charts Produced
+| Chart | File |
+|---|---|
+| Driver Wins 2020-2024 | `driver_wins_2020_2024.png` |
+| Constructor Championship Points | `constructor_points_2020_2024.png` |
+| Points Progression 2023 & 2024 | `points_progression_2023_2024.png` |
+| Grid Position vs Race Finish | `grid_vs_finish_2020_2024.png` |
+| Pit Stop Strategy Trends | `pitstop_strategy_2020_2024.png` |
 
-## Key findings
-
-> Fill in after running the notebook — e.g.
-> "Verstappen won 19 out of 22 races in 2023 —
-> the highest win rate in modern F1 history"
-
-## Files
-
-| File | Description |
-|------|-------------|
-| analysis.ipynb | Main analysis notebook — run this |
-| visualizations.py | Reusable plotting functions |
-| README.md | This file |
-
-## Output charts
-
-All charts saved to `outputs/` folder:
-- `wins_2020_2024.png`
-- `constructor_points_2020_2024.png`
-- `points_progression_2023.png`
-- `grid_vs_finish_modern.png`
+## Key Findings
+- Grid position has a strong positive correlation with race finish (~0.6+)
+- Red Bull dominated the 2020-2024 era in both driver and constructor points
+- P1 grid to P1 finish conversion rate reveals qualifying importance
+- Pit stop times and strategy vary significantly across teams
 
 ## Dataset
+- Source: Kaggle F1 World Championship Dataset
+- Scope: 2020-2024 (Modern Regulations Era)
+- Files used: results, races, drivers, constructors, pit_stops, qualifying
 
-Kaggle Ergast dataset filtered to 2020–2024:
-- `races.csv`
-- `drivers.csv`
-- `results.csv`
-- `constructors.csv`
-- `driver_standings.csv`
-
-## How to run
-```bashf1_env\Scripts\activate.bat
-Open analysis.ipynb in VS Code
-Run each cell with Shift+Enter
+## Next
+Part 2 - FastF1 Telemetry Visualisations

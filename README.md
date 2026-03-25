@@ -29,15 +29,15 @@ about modern F1 racing.
 ├── models/                   ← Saved ML models
 └── src/                      ← Reusable utility scripts
 
-## What I built
+## Project Progress
 
-| Part | Topic | Data Used | Tech | Status |
-|------|-------|-----------|------|--------|
-| 01 | 2020–2024 F1 analysis | Kaggle Ergast | pandas, matplotlib, seaborn | 🔄 In Progress |
-| 02 | 2024 live telemetry | FastF1 API | FastF1, matplotlib | ⏳ Coming soon |
-| 03 | Race winner prediction | 2020–2024 Kaggle | scikit-learn, RandomForest | ⏳ Coming soon |
-| 04 | Model improvement | 2020–2024 Kaggle | XGBoost, GridSearchCV | ⏳ Coming soon |
-| 05 | AI race engineer | Live FastF1 2024 | LLM API, RAG, FastF1 | ⏳ Coming soon |
+| Part | Topic | Status |
+|---|---|---|
+| 1 | Data Analysis (Kaggle) | Complete ✅ |
+| 2 | FastF1 Telemetry Visualisations | In Progress 🔄 |
+| 3 | Race Prediction ML Model | Upcoming |
+| 4 | Feature Engineering & Model Improvement | Upcoming |
+| 5 | AI Race Engineer Chatbot | Upcoming |
 
 ## Results
 
