@@ -37,7 +37,7 @@ about modern F1 racing.
 | 2 | FastF1 Telemetry Visualisations | In Progress 🔄 |
 | 3 | Race Prediction ML Model | Upcoming |
 | 4 | Feature Engineering & Model Improvement | Upcoming |
-| 5 | AI Race Engineer Chatbot | Upcoming |
+| 5 | AI Race Engineer Chatbot | Upcoming | 
 
 ## Results
 
