@@ -1,0 +1,33 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║        F1 FASTF1 TELEMETRY - PART 2 COMPLETE                    ║
+║        2024 Monaco Grand Prix  |  31 Mar 2026               ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  RACE OVERVIEW                                                   ║
+║  Circuit          : Circuit de Monaco, Monte-Carlo              ║
+║  Season           : 2024 Formula 1 World Championship           ║
+║  Total Laps       : 78                                           ║
+║  Compounds Used   : MEDIUM, HARD, SOFT                      ║
+║                                                                  ║
+║  TOP 5 FINISHERS                                                 ║
+║  P1  Charles Leclerc      Ferrari                 ║
+║  P2  Oscar Piastri        McLaren                 ║
+║  P3  Carlos Sainz         Ferrari                 ║
+║  P4  Lando Norris         McLaren                 ║
+║  P5  George Russell       Mercedes                ║
+║                                                                  ║
+║  STRATEGY & TELEMETRY INSIGHTS                                   ║
+║  Race winner      : Charles Leclerc                         ║
+║  Winner team      : Ferrari                                 ║
+║  Winner stints    : 2                                           ║
+║  Fastest lap drv  : HAM                                         ║
+║  Fastest lap time : 0 days 00:01:14.165000                     ║
+║                                                                  ║
+║  CHARTS SAVED                                                    ║
+║  monaco_2024_tyre_strategy.png      - Done                      ║
+║  monaco_2024_speed_trace.png        - Done                      ║
+║                                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  PART 2 COMPLETE - Ready for Part 3: ML Race Prediction         ║
+╚══════════════════════════════════════════════════════════════════╝
