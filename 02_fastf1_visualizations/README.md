@@ -1,55 +1,31 @@
-# Part 2 — FastF1 Live Telemetry Visualisations (2024 Season)
+# Part 2 — FastF1 Telemetry Visualisations (2024 Monaco GP)
 
-Real F1 telemetry pulled live from Formula 1's official
-data feed using the FastF1 API — 2024 season races.
+Real telemetry data analysis using the FastF1 API on the 2024 Monaco Grand Prix.
 
-## What I built
+## Status: Complete ✅
 
-- Speed trace for fastest 2024 qualifying lap
-- Driver head-to-head telemetry comparison (2024 race)
-- Tyre strategy plot — 2024 race top 10 finishers
-- Lap time delta between teammates (2024 season)
+## Charts Produced
+| Chart | File |
+|---|---|
+| Tyre Strategy — all drivers full race | `monaco_2024_tyre_strategy.png` |
+| Speed Trace — P1 vs P2 fastest lap | `monaco_2024_speed_trace.png` |
+| Part 2 Summary Card | `part2_summary_card.png` |
 
-## Races covered
+## Key Insights
+- Monaco 2024 was a classic one-stop race dominated by tyre management
+- Speed trace reveals where each driver gains and loses time across the lap
+- Throttle, brake and gear data shows driving style differences lap to lap
+- Telemetry data is the foundation for the feature engineering in Part 4
 
-- 2024 Bahrain GP (season opener)
-- 2024 Monaco GP (street circuit)
-- 2024 British GP (Silverstone)
-- 2024 Italian GP (Monza — highest speed circuit)
+## Tech Used
+- FastF1 API for live telemetry and session data
+- Matplotlib for all visualisations
+- scipy for telemetry interpolation on speed delta fills
 
-## Key insight
+## Session
+- Race: 2024 Monaco Grand Prix
+- Circuit: Circuit de Monaco, Monte-Carlo
+- Data: Laps, stints, tyre compounds, speed, throttle, brake, gear
 
-> Fill in after running — e.g.
-> "Verstappen's top speed advantage at Monza 2024
-> was +12 km/h over Hamilton in sector 2"
-
-## Files
-
-| File | Description |
-|------|-------------|
-| telemetry.ipynb | Main visualisation notebook |
-| tyre_strategy.py | Reusable tyre strategy plot |
-| README.md | This file |
-
-## Output charts
-
-- `speed_trace_2024.png`
-- `driver_comparison_2024.png`
-- `tyre_strategy_2024.png`
-- `lap_delta_teammates_2024.png`
-
-## How FastF1 works
-
-FastF1 connects directly to F1's live timing system
-and downloads lap-by-lap telemetry — speed, throttle,
-brake, gear and GPS for every car in every session.
-No manual download needed — it fetches automatically.
-
-## How to run
-```bash
-f1_env\Scripts\activate.bat
-# Open telemetry.ipynb
-# Data downloads automatically on first run
-# (needs internet connection)
-
-```
+## Next
+Part 3 - ML Race Prediction Model
