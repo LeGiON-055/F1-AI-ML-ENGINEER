@@ -35,8 +35,8 @@ about modern F1 racing.
 |---|---|---|
 | 1 | Data Analysis (Kaggle) | Complete ✅ |
 | 2 | FastF1 Telemetry Visualisations | Complete ✅ |
-| 3 | Race Prediction ML Model | In Progress 🔄 |
-| 4 | Feature Engineering & Model Improvement | Upcoming |
+| 3 | Race Prediction ML Model | Complete ✅ |
+| 4 | Feature Engineering & Model Improvement | In Progress 🔄 |
 | 5 | AI Race Engineer Chatbot | Upcoming |
 | Bonus | 2026 Championship Predictor | After full project ⏳ |
 

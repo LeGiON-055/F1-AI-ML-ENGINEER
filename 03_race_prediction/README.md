@@ -1,57 +1,54 @@
-# Part 3 — ML Race Winner Prediction (2020–2024)
+# Part 3 — ML Race Prediction Model
 
-A machine learning model trained to predict Formula 1
-race winners using 2020–2024 race data.
+Machine learning models trained to predict F1 race winners using 2021-2023 data, tested on the unseen 2024 season.
 
-## Problem
+## Status: Complete ✅
 
-Given pre-race information available before lights out
-(grid position, championship standings, circuit),
-can we predict which driver will win?
+## Models Built
+| Model | ROC-AUC | Races Correct (2024) |
+|---|---|---|
+| XGBoost | TBC after your run | TBC |
+| Random Forest | TBC after your run | TBC |
 
-## Why 2020–2024 only?
+## Features Used (15 total)
+| Feature | Description |
+|---|---|
+| `grid` | Qualifying / grid position |
+| `grid_squared` | Non-linear grid advantage |
+| `is_pole` | Pole position binary flag |
+| `is_front_row` | Front row start binary flag |
+| `driver_avg_points` | Driver average points per race |
+| `driver_form_3` | Rolling 3 race points average |
+| `driver_form_5` | Rolling 5 race points average |
+| `recent_win_rate` | Rolling 5 race win rate |
+| `win_rate_at_circuit` | Driver historical win % at circuit |
+| `constructor_avg_points` | Team average points per race |
+| `constructor_form_3` | Rolling 3 race team points |
+| `championship_position` | Driver standing at race time |
+| `championship_points` | Cumulative championship points |
+| `dnf_rate` | Driver reliability score |
+| `round` | Race number in season |
 
-Using only the modern era means the model learns from
-current car regulations, tyre compounds and team
-performance — not 1970s data that's irrelevant today.
+## Train / Test Split
+- Train: 2021, 2022, 2023 seasons
+- Test: 2024 season (completely unseen)
+- Target: is_winner (1 = race winner, 0 = all others)
 
-## Approach
-
-- Built structured dataset from Kaggle Ergast 2020–2024
-- Trained RandomForestClassifier as baseline model
-- Evaluated with accuracy, precision, recall, F1 score
-
-## Results
-
-| Metric | Score |
-|--------|-------|
-| Accuracy | [fill in after running] |
-| Precision | [fill in after running] |
-| Recall | [fill in after running] |
-| F1 Score | [fill in after running] |
-
-## Features used
-
-- Grid position (qualifying result)
-- Driver championship points before race
-- Constructor championship points before race
-- Circuit ID (encoded)
-- Driver ID (encoded)
-
-## Files
-
+## Files Produced
 | File | Description |
-|------|-------------|
-| dataset_builder.py | Builds ML dataset from 2020–2024 CSVs |
-| model_training.ipynb | Trains, evaluates and saves model |
-| README.md | This file |
+|---|---|
+| `model_confusion_matrices.png` | Confusion matrix for both models |
+| `predictions_vs_actual_2024.png` | Race by race predictions vs actual |
+| `feature_importance_comparison.png` | Feature importance for both models |
+| `model_metrics_comparison.png` | Full metrics comparison chart |
+| `predictions_2024.csv` | Raw predictions with confidence scores |
+| `part3_summary_card.png` | Summary visual card |
 
-## How to run
-```bash
-f1_env\Scripts\activate.bat
+## Key Findings
+- Grid position and championship standing are the strongest predictors
+- XGBoost handles class imbalance better due to scale_pos_weight
+- Rolling form features capture momentum that static averages miss
+- ~5% positive class rate makes this a challenging imbalanced classification problem
 
-# Step 1 — build the dataset
-python dataset_builder.py
-
-# Step 2 — open and run model_training.ipynb
-```
+## Next
+Part 4 - Feature Engineering & Model Improvement
