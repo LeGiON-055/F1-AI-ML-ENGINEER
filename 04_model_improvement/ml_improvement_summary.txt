@@ -1,0 +1,51 @@
+F1 AI/ML PROJECT - PART 4 SUMMARY
+===================================
+Generated: 2026-04-20 14:13:16
+
+MODELS TRAINED:
+- XGBoost  (Accuracy: 0.9562 | F1: 0.6182 | AUC: 0.9727)
+- Random Forest (Accuracy: 0.9478 | F1: 0.5098 | AUC: 0.9715)
+
+BEST MODEL: XGBoost
+
+CROSS VALIDATION (5-Fold Stratified):
+- XGBoost   Mean F1: 0.7819 (+/- 0.0920)
+- Rand Forest Mean F1: 0.7622 (+/- 0.0695)
+
+TOP 5 SHAP FEATURES:
+1. win_rate_at_circuit
+2. grid
+3. championship_points
+4. championship_position
+5. recent_win_rate
+
+FEATURES USED (21 total):
+- grid
+- grid_squared
+- is_pole
+- is_front_row
+- driver_avg_points
+- driver_form_3
+- driver_form_5
+- recent_win_rate
+- win_rate_at_circuit
+- avg_points_at_circuit
+- constructor_avg_points
+- constructor_form_3
+- championship_position
+- championship_points
+- dnf_rate
+- round
+- driver_avg_finish
+- driver_win_rate
+- typical_gain
+- num_pitstops
+- avg_pitstop_time
+
+FILES SAVED:
+- best_f1_model.pkl
+- shap_explainability.png
+- part4_summary_card.png
+- ml_improvement_summary.txt
+
+NEXT: Part 5 - AI Race Engineer Chatbot
