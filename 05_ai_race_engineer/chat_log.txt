@@ -1,0 +1,39 @@
+F1 AI RACE ENGINEER - CHAT LOG
+================================
+Generated: 2026-04-21 21:09:02
+Model Used: llama-3.3-70b-versatile (Groq - Free)
+Total Turns: 5
+
+DEMO QUESTIONS ASKED:
+1. Who has been the most dominant driver from 2020 to 2024 and why?
+2. What is the ideal pit stop strategy for a 2-stop race at Monaco?
+3. If Max Verstappen starts from P3 at Monza what strategy would you recommend to win?
+
+DATA USED:
+- Races analyzed  : 107 (2020-2024)
+- Race entries    : 2139
+- Pit stop records: 3934
+- Qualifying rows : 2138
+
+TOP DRIVERS IN CONTEXT:
+      full_name  wins  total_pts
+ Max Verstappen    55     1964.5
+ Lewis Hamilton    21     1389.5
+Charles Leclerc     6     1060.0
+   Sergio Pérez     6     1004.0
+   Carlos Sainz     4      936.5
+
+TOP CONSTRUCTORS IN CONTEXT:
+          name  wins  total_pts
+      Red Bull    60     2948.5
+      Mercedes    27     2479.5
+       Ferrari    10     1930.5
+       McLaren     7     1501.0
+Alpine F1 Team     1      498.0
+
+HOW IT WORKS:
+- Real F1 CSV data loaded and summarized
+- Data context injected into every AI prompt
+- Groq API (llama-3.3-70b-versatile) powers the responses
+- Full conversation history sent each turn (AI has memory)
+- Interactive loop allows unlimited questions
