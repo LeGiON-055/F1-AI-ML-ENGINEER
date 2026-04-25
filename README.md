@@ -1,202 +1,287 @@
-# 🏎️ Formula 1 AI Platform: Race Prediction & Strategy Intelligence
+<div align="center">
 
-An end-to-end Machine Learning system built on real Formula 1 data, combining predictive modeling, telemetry analysis, and an AI-powered race engineer chatbot.
+<img src="https://readme-typing-svg.demolab.com?font=Formula+1+Display&size=40&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=800&lines=F1+AI+%26+ML+Engineer;Formula+1+Race+Prediction+%26+AI+Strategy" alt="Typing SVG" />
 
-![Project Banner](visuals/part5_summary_card.png)
+<br/>
 
----
+![Python](https://img.shields.io/badge/Python-3.10+-FFD700?style=for-the-badge&logo=python&logoColor=black)
+![XGBoost](https://img.shields.io/badge/XGBoost-Model-FF6B35?style=for-the-badge&logo=python&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-LLM-00D4AA?style=for-the-badge&logo=groq&logoColor=white)
+![FastF1](https://img.shields.io/badge/FastF1-Telemetry-E8002D?style=for-the-badge&logo=f1&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-Explainability-4ecdc4?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## 🚀 Overview
+<br/>
 
-This project simulates a modern F1 analytics stack:
+> **An end-to-end Formula 1 AI and Machine Learning project — from raw data analysis to an AI-powered race engineer chatbot — built entirely in Python.**
 
-- 📊 Data Analysis (2020–2024 seasons)  
-- 📡 Telemetry Insights (FastF1)  
-- 🤖 Race Winner Prediction Models  
-- 🧠 Model Explainability (SHAP)  
-- 🗣️ AI Race Engineer Chatbot (LLM-powered)  
+<br/>
 
-Built entirely using Python with real-world datasets and production-style workflows.
+[View Project](#project-overview) • [Notebooks](#notebooks) • [Setup](#setup) • [Results](#results) • [Tech Stack](#tech-stack)
 
----
-
-## 📈 Key Highlights
-
-- Analyzed **106 races** and **2100+ race entries**
-- Engineered **21 high-impact ML features**
-- Trained **XGBoost & Random Forest models**
-- Achieved **ROC-AUC ~0.97 on unseen 2024 data**
-- Implemented **SHAP explainability (global + local)**
-- Built a **context-aware AI chatbot (Groq + LLaMA 3.3)**
+<br/>
 
 ---
 
-## 🧱 Project Architecture
-F1-AI-ML-ENGINEER/
-│
-├── data/ # Kaggle dataset (1950–2024)
-├── cache/ # FastF1 telemetry cache
-│
-├── 01_data_analysis/ # EDA & visualizations
-├── 02_fastf1_visualizations/ # Telemetry analysis
-├── 03_race_prediction/ # ML baseline models
-├── 04_model_improvement/ # Tuning + SHAP
-├── 05_ai_race_engineer/ # LLM chatbot
-│
-├── models/ # Saved ML models
-├── visuals/ # Generated plots
-├── README.md
-└── requirements.txt
+</div>
+
+## What Is This?
+
+This project transforms **14 raw F1 CSV files** (1950-2024) and **live FastF1 telemetry** into:
+
+- 📊 Deep data visualizations of the modern F1 era (2020-2024)
+- 🏎️ Live telemetry analysis from the 2024 Monaco Grand Prix
+- 🤖 A machine learning model that predicts race winners
+- 🔬 Advanced model improvement with SHAP explainability
+- 🎙️ An AI race engineer chatbot that answers strategy questions
+
+<br/>
 
 ---
 
-## 🧩 Project Breakdown
+## Project Overview
 
-### 📊 Part 1 – Data Analysis
+F1 Ai&ML Project/
+├── 📁 data/                         ← Kaggle F1 CSVs (1950-2024)
+├── 📁 cache/                        ← FastF1 telemetry cache
+├── 📁 01_data_analysis/             ← COMPLETE
+├── 📁 02_fastf1_visualizations/     ← COMPLETE
+├── 📁 03_race_prediction/           ← COMPLETE
+├── 📁 04_model_improvement/         ← COMPLETE
+├── 📁 05_ai_race_engineer/          ← COMPLETE
+└── 📄 README.md
 
-- Explored 2020–2024 seasons
-- Driver wins, constructor dominance
-- Grid vs finish correlation (strong ML signal)
-- Pit stop strategies and trends  
-
-![Data Analysis](visuals/part1_summary_card.png)
-
----
-
-### 📡 Part 2 – FastF1 Telemetry
-
-- Monaco GP 2024 analysis
-- Tyre strategy visualization
-- Speed trace comparison (P1 vs P2)
-- Throttle, brake, and gear telemetry  
-
-![Telemetry](visuals/part2_summary_card.png)
+<br/>
 
 ---
 
-### 🤖 Part 3 – Race Prediction
+## Notebooks
 
-- Binary classification (Winner vs Not Winner)
-- Models: XGBoost, Random Forest
-- 15 engineered features
-- Train: 2021–2023 | Test: 2024  
+### Part 1 — Data Analysis
+> `01_data_analysis/analysis.ipynb`
 
-![Model Evaluation](visuals/model_confusion_matrices.png)
+Exploratory data analysis across **106 races and 2100+ entries** from the 2020-2024 F1 seasons.
 
----
+| Visualization | Description |
+|---|---|
+| Driver Wins 2020-2024 | Horizontal bar chart of all race winners |
+| Constructor Points | Championship points by team across 5 seasons |
+| Points Progression | Side by side 2023 vs 2024 season comparison |
+| Grid vs Finish | Scatter plot and heatmap of starting vs finishing position |
+| Pit Stop Strategy | 3-panel layout of strategy trends across seasons |
 
-### ⚙️ Part 4 – Model Improvement
+**Theme:** Custom dark F1 theme (`#1a1a2e` background, `#FFD700` titles)
 
-- Expanded to **21 features**
-- GridSearchCV hyperparameter tuning
-- Stratified 5-Fold Cross Validation
-- SHAP explainability:
-  - Feature importance
-  - Beeswarm plots
-  - Dependence plots  
-
-![SHAP](visuals/shap_explainability.png)
+<br/>
 
 ---
 
-### 🗣️ Part 5 – AI Race Engineer
+### Part 2 — FastF1 Telemetry Visualizations
+> `02_fastf1_visualizations/visualizations.ipynb`
 
-- LLM-powered chatbot (Groq + LLaMA 3.3)
-- Injected real F1 statistics into system context
-- Maintains conversation memory
-- Answers strategy queries (tyres, pit stops, drivers)  
+Live telemetry pulled directly from the **2024 Monaco Grand Prix** using the FastF1 library.
 
-![AI Engineer](visuals/part5_summary_card.png)
+| Visualization | Description |
+|---|---|
+| Tyre Strategy Chart | Full race tyre strategy for every driver |
+| Speed Trace | P1 vs P2 speed comparison with throttle, brake, gear panels |
 
----
+**Libraries:** `fastf1`, `scipy` (for interpolation)
 
-## 📊 Model Performance
-
-| Model          | ROC-AUC |
-|---------------|--------|
-| XGBoost       | 0.975  |
-| Random Forest | 0.9746 |
-
-- Evaluated on **fully unseen 2024 season**
-- Balanced using **stratified cross-validation**
+<br/>
 
 ---
 
-## 🧠 Explainability (SHAP)
+### Part 3 — Race Prediction Model
+> `03_race_prediction/race_prediction.ipynb`
 
-Key influencing factors:
+Binary classification model — predicts whether a driver will **win the race** (P1 = 1, else = 0).
 
-- Circuit win rate  
-- Grid position  
-- Championship position  
-- Recent performance  
-- Pit stop efficiency  
+| Detail | Value |
+|---|---|
+| Target | `is_winner` (binary) |
+| Train set | 2021-2023 seasons |
+| Test set | 2024 season (unseen) |
+| Models | XGBoost vs Random Forest |
+| Features | 15 engineered features |
 
-Provides transparency into **why predictions are made**, not just results.
+**15 Features engineered:**
+`grid`, `grid_squared`, `is_pole`, `is_front_row`, `driver_avg_points`,
+`driver_form_3`, `driver_form_5`, `recent_win_rate`, `win_rate_at_circuit`,
+`constructor_avg_points`, `constructor_form_3`, `championship_position`,
+`championship_points`, `dnf_rate`, `round`
 
----
-
-## 🗂️ Dataset
-
-Source: Kaggle Formula 1 World Championship Dataset (1950–2024)
-
-Includes:
-
-- Race results, drivers, constructors  
-- Pit stops, qualifying, standings  
-- Circuits, lap times, status codes  
+<br/>
 
 ---
 
-## 🛠️ Tech Stack
+### Part 4 — Model Improvement
+> `04_model_improvement/model_improvement.ipynb`
 
-**Languages & Libraries**
+Significant improvement over Part 3 with advanced tuning and explainability.
 
-- Python, Pandas, NumPy  
-- Scikit-learn, XGBoost  
-- SHAP, SciPy  
-- Matplotlib, Seaborn  
+**What was done:**
 
-**Specialized Tools**
+- Expanded from **15 to 21 engineered features** (added pit stop efficiency, typical position gain, circuit averages)
+- **GridSearchCV** hyperparameter tuning across hundreds of combinations
+- **5-Fold Stratified Cross Validation** to handle class imbalance (~5% winners)
+- **SHAP explainability** — beeswarm, global bar chart, and dependence plots
+- Best model exported as `best_f1_model.pkl` for reuse
 
-- FastF1 (telemetry)  
-- Groq API (LLM integration)  
+| SHAP Plot | What It Shows |
+|---|---|
+| Beeswarm | Per-prediction feature impact (red = pushed prediction up) |
+| Bar Chart | Global feature importance ranked by mean absolute SHAP |
+| Dependence (Grid) | How grid position SHAP value changes from P1 to P20 |
+| Dependence (Points) | How driver quality impacts winning probability |
+
+<br/>
 
 ---
 
-## ⚙️ Setup
+### Part 5 — AI Race Engineer Chatbot
+> `05_ai_race_engineer/race_engineer.ipynb`
 
+An interactive AI race engineer powered by **real F1 data + Groq LLM**.
+
+**How it works:**
+
+Real F1 CSVs
+↓
+Compute driver stats, constructor stats, pit stop averages
+↓
+Build data context string (injected as system prompt)
+↓
+User asks strategy question
+↓
+Groq API (llama-3.3-70b-versatile) answers using real data
+↓
+Full conversation history sent every turn (AI has memory)
+
+**Example questions you can ask:**
+Who has been the most dominant driver from 2020 to 2024?
+What is the ideal pit stop strategy for a 2-stop race at Monaco?
+If Verstappen starts P3 at Monza what strategy would you recommend?
+Which constructor has the best pit stop performance?
+When is the best lap to pit under a safety car?
+What tyre strategy works best in wet conditions?
+
+<br/>
+
+---
+
+## Results
+
+| Metric | Value |
+|---|---|
+| Races analyzed | 106 (2020-2024) |
+| Race entries | 2100+ |
+| Pit stop records | 8500+ |
+| Features engineered | 21 |
+| CV Folds | 5-Fold Stratified |
+| Best model | XGBoost (tuned) |
+| AI model | llama-3.3-70b-versatile |
+
+<br/>
+
+---
+
+## Dataset
+
+**Kaggle Formula 1 World Championship Dataset (1950-2024)**
+
+| File | Description |
+|---|---|
+| `races.csv` | All race info by year and round |
+| `results.csv` | Race results and finishing positions |
+| `drivers.csv` | Driver info and nationalities |
+| `constructors.csv` | Constructor and team info |
+| `qualifying.csv` | Qualifying results |
+| `pit_stops.csv` | Pit stop timings |
+| `driver_standings.csv` | Championship standings per race |
+| `constructor_standings.csv` | Constructor standings per race |
+| `circuits.csv` | Circuit info and locations |
+| `lap_times.csv` | Individual lap times |
+| `status.csv` | Finish status codes |
+
+<br/>
+
+---
+
+## Tech Stack
+
+| Category | Libraries |
+|---|---|
+| Data | `pandas`, `numpy` |
+| Visualization | `matplotlib`, `seaborn` |
+| Telemetry | `fastf1`, `scipy` |
+| Machine Learning | `scikit-learn`, `xgboost` |
+| Explainability | `shap` |
+| AI Chatbot | `groq`, `python-dotenv` |
+| Environment | `jupyter`, `ipykernel` |
+
+<br/>
+
+---
+
+## Setup
+
+**1. Clone the repo**
 ```bash
 git clone https://github.com/LeGiON-055/F1-AI-ML-ENGINEER.git
 cd F1-AI-ML-ENGINEER
+```
 
+**2. Create and activate virtual environment**
+```bash
 python -m venv f1_env
 f1_env\Scripts\activate
+```
 
-pip install -r requirements.txt
+**3. Install all libraries**
+```bash
+pip install pandas numpy matplotlib seaborn fastf1 scipy
+pip install scikit-learn xgboost shap
+pip install groq python-dotenv jupyter ipykernel
+```
 
-## 🎨 Visualization Theme
+**4. Add your Groq API key**
+```bash
+# Create this file: 05_ai_race_engineer/.env
+GROQ_API_KEY=your-free-key-here
+# Get free key at https://console.groq.com
+```
 
-- **Background:** `#1a1a2e`  
-- **Primary:** `#FFD700` (F1 gold)  
-- **Accent:** `#4ecdc4`  
+**5. Run notebooks in order**
+01_data_analysis/analysis.ipynb
+02_fastf1_visualizations/visualizations.ipynb
+03_race_prediction/race_prediction.ipynb
+04_model_improvement/model_improvement.ipynb
+05_ai_race_engineer/race_engineer.ipynb
+
+<br/>
 
 ---
 
-## 🚧 Future Work
+## Project Status
 
-- 🏁 2026 race prediction system  
-- 📊 Interactive dashboard (Streamlit)  
-- 🌐 API deployment (FastAPI)  
+| Part | Description | Status |
+|---|---|---|
+| Part 1 | Data Analysis | COMPLETE |
+| Part 2 | FastF1 Telemetry Visualizations | COMPLETE |
+| Part 3 | Race Prediction Model | COMPLETE |
+| Part 4 | Model Improvement + SHAP | COMPLETE |
+| Part 5 | AI Race Engineer Chatbot | COMPLETE |
+| Bonus | 2026 Championship Predictor | UPCOMING |
+
+<br/>
 
 ---
 
-## 📌 Why This Project Matters
+<div align="center">
 
-This project demonstrates:
+**Built with passion for Formula 1 and Machine Learning**
 
-- End-to-end ML system design  
-- Strong feature engineering  
-- Real-world evaluation strategy  
-- Model interpretability  
-- AI application integration  
+⭐ Star this repo if you found it useful!
+
+</div>
