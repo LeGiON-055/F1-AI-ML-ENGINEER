@@ -1,0 +1,59 @@
+F1 AI/ML PROJECT - BONUS: 2026 CHAMPIONSHIP PREDICTOR
+=======================================================
+Generated: 2026-05-02 19:14:02
+Model used: XGBoost
+Races predicted: 22
+Drivers: 22 | Teams: 11
+
+PREDICTED 2026 WORLD CHAMPION:
+Max Verstappen (Red Bull) - 431 pts
+
+PREDICTED 2026 CONSTRUCTORS CHAMPION:
+Red Bull - 529 pts
+
+PREDICTED TOP 10 DRIVERS:
+        driver         team  points  position  wins  podiums
+Max Verstappen     Red Bull     431         1    14       19
+ Oscar Piastri      McLaren     174         2     2        8
+Kimi Antonelli     Mercedes     143         3     0        3
+Lewis Hamilton      Ferrari     136         4     1        6
+George Russell     Mercedes     135         5     1        2
+  Isack Hadjar     Red Bull      98         6     0        4
+   Liam Lawson Racing Bulls      98         7     0        1
+    Alex Albon     Williams      93         8     0        3
+  Pierre Gasly       Alpine      93         9     1        1
+  Lando Norris      McLaren      84        10     1        4
+
+RACE BY RACE PREDICTIONS:
+ round           race          winner
+     1      Australia  Max Verstappen
+     2          China  Max Verstappen
+     3          Japan  Max Verstappen
+     4          Miami  Max Verstappen
+     5 Emilia Romagna Valtteri Bottas
+     6         Monaco  Max Verstappen
+     7         Canada  Max Verstappen
+     8          Spain  Max Verstappen
+     9        Austria  Max Verstappen
+    10        Britain  Lewis Hamilton
+    11        Belgium  Max Verstappen
+    12        Hungary   Oscar Piastri
+    13    Netherlands  Max Verstappen
+    14          Italy    Pierre Gasly
+    15     Azerbaijan    Sergio Perez
+    16      Singapore    Lando Norris
+    17  United States  Max Verstappen
+    18         Mexico  Max Verstappen
+    19         Brazil   Oscar Piastri
+    20      Las Vegas  George Russell
+    21          Qatar  Max Verstappen
+    22      Abu Dhabi  Max Verstappen
+
+FILES SAVED:
+- race_predictions_2026.csv
+- championship_standings_2026.csv
+- championship_standings_2026.png
+- race_winners_2026.png
+- points_progression_2026.png
+- part6_summary_card.png
+- prediction_2026_summary.txt
