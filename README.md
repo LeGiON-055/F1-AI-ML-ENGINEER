@@ -264,15 +264,12 @@ GROQ_API_KEY=your-free-key-here
 ---
 
 ## Project Status
-
-| Part | Description | Status |
-|---|---|---|
-| Part 1 | Data Analysis | COMPLETE |
-| Part 2 | FastF1 Telemetry Visualizations | COMPLETE |
-| Part 3 | Race Prediction Model | COMPLETE |
-| Part 4 | Model Improvement + SHAP | COMPLETE |
-| Part 5 | AI Race Engineer Chatbot | COMPLETE |
-| Bonus | 2026 Championship Predictor | UPCOMING |
+- Part 1 - Data Analysis         - COMPLETE
+- Part 2 - FastF1 Visualizations - COMPLETE
+- Part 3 - Race Prediction       - COMPLETE
+- Part 4 - Model Improvement     - COMPLETE
+- Part 5 - AI Race Engineer      - COMPLETE
+- Bonus  - 2026 Predictor        - COMPLETE
 
 <br/>
 
